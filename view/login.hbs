@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{>head title=this.title subpage='ATN shop' }}
+  <title>Đăng nhập</title>
+  <style type="text/css">
+  body{
+    background-image: url('Chikorita.jpg');
+    font-family: sans-serif;
+  }
+  
+  p{
+    display: inline-block;
+  }
+  
+  .login{
+    width: 300px;
+    height: 450px;
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  .login h2{
+    display: inline-block;
+    color: grey;
+  }
+  
+  .login input{
+    width: 200px;
+    height: 40px;
+    border: 1px solid grey;
+    padding-left: 20px;
+  }
+  
+  .check input{
+    width: 10px;
+    height: 10px;
+  }
+  
+  .login button{
+    width: 180px;
+    height: 40px;
+    border: none;
+    border-radius: 9px;
+    background-color: #7289a7;
+    color: rgb(22, 22, 22);
+  }
+  
+  .check{
+    float: left;
+    padding-left: 40px;
+  }
+  
+  .login a{
+    float: none;
+    padding-right: 40px;
+    text-decoration: none;
+    margin-top: 20px;
+  }
+  
+  </style>
+</head>
+<body>
+{{>header  title=this.title}}
+    {{>footer}}
+  <div class="login"> </br> <br> <br> <br>
+    <h2>Đăng nhập</h2> <br>
+    <p>Tên đăng nhập</p> 
+      <input type="text" placeholder="Nhập tên đăng nhập"> <br>
+    <p>Mật khẩu</p> <br>
+      <input type="password" placeholder="Nhập mật khẩu"> <br>
+
+  <div class="check">
+    <input type="checkbox">
+    Nhớ mật khẩu
+  </div>
+  <button><a href="product">Đăng nhập</a></button> 
+  <br>
+  <a id="forgot" href="#">quên mật khẩu</a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>head title=this.title subpage='ATN Shop' }}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh Toán</title>
+</head>
+
+<style type="text/css">
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.logo img{
+    width: 5%;
+    float: left;
+    margin-top: -60px;
+}
+
+.menu{
+    margin-left: 70em;
+}
+
+.form-group{
+    width: 50%;
+    float: left;
+}
+
+.form-1{
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.form-2{
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    width: 37%;
+}
+
+.form-3{
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    width: 37%;
+}
+
+textarea{
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    width: 37%;
+}
+
+.form-4{
+    margin: 10px;
+
+}
+
+.submit a{
+    border: 1px orange solid;
+    padding: 20px;
+    background-color: orange;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+.submit{
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+}
+
+a:hover{
+    color: blue;
+}
+
+</style>
+<body>
+    {{>header  title=this.title}}
+    {{>footer}}
+    <div class="menu"> <br> <br><br><br>
+        <span><a href="product">Trang Chủ</a></span>
+        <span><a href="#">Đăng Ký</a></span>
+        <span><a href="login">Đăng Nhập</a></span>
+        <span><a href="#">Hỗ Trợ</a></span>
+    </div>
+    <div class="logo">
+        <a href="product"><img src="Logo.jpg"></a>
+    </div>
+    <div style="margin-top: 150px;"></div>
+    <div class="container">
+        <h3>Thông tin giao hàng</h3>
+        <form class="form-group">
+            <input type="text" placeholder="Số điện thoại" class="form-1">
+            <input type="text" placeholder="Email" class="form-1"> <br>
+            <input type="text" placeholder="Họ và tên" class="form-2"> <br>
+            <input type="text" placeholder="Địa chỉ" class="form-3"> <br>
+            <textarea name="if" id="" cols="30" rows="10" placeholder="Nhập ghi chú (nếu có)"></textarea> <br>
+            <input type="radio" name="pay" class="form-4"> Thanh toán khi nhận hàng <br>
+            <input type="radio" name="pay" class="form-4"> Thanh toán chuyển khoảng
+            <br>
+        </form>
+        <div class="form-group">
+            <img src="Shinobu.jpg" style="width: 50%;">
+            <p>Tổng: 7.000.000đ</p>
+            <br>
+            <div class="submit">
+            <a href="product">Hoàn thành thanh toán</a>
+            </div>
+        </div>
+        <br>
+    </div>
+</body>
+</html>

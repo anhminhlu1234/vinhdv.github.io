@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>head title=this.title subpage='ATN Shop' }}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+  /*SanPham*/
+
+#title{
+  margin-top: 50px;
+  border: 1px solid grey;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  background-color: orange;
+  color: white;
+}
+
+.layer :hover{
+  opacity: 50%;
+}
+
+.layer1{
+  float: left;
+  margin-left: 30px;
+}
+
+.layer2{
+float: right;
+margin-right: 650px;
+}
+
+.layer3{
+float: right;
+margin-right: 30px;
+margin-top: -690px;
+}
+
+.layer4{
+  float: left;
+  margin-left: 30px;
+}
+
+.layer5{
+float: right;
+margin-right: 650px;
+}
+
+.layer6{
+float: right;
+margin-right: 30px;
+margin-top: -690px;
+}
+
+
+.ten .gia{
+  text-align: center;
+}
+
+</style>
+<body>
+    {{>header  title=this.title}}
+    {{>footer}}
+  <p id="title">Khuyến mãi</p> 
+      <div class="layer">
+        <div class="layer1">
+          <a href="order"><img src="Kakashi600x600.jpg" alt=""> </a> <br>
+          <a class="ten" href="order">Kakashi</a> <br>
+          <a class="ten" href="order">Mã: 2542 </a>
+          <p class="gia">5.000.000Đ</p>
+        </div>
+
+        <div class="layer2">
+          <a href="order"><img src="Doremon600x600.jpg" alt=""> </a> <br>
+          <a class="ten" href="order">Doreamon</a> <br>
+          <a class="ten" href="order">Mã: 3526 </a>
+          <p class="gia">5.000.000Đ</p>
+        </div>
+
+        <div class="layer3">
+          <a href="order"><img src="Shinobu600x600.jpg" alt=""> </a> <br>
+          <a class="ten" href="order">Shinobu</a> <br>
+          <a class="ten" href="order">Mã: 6432 </a>
+          <p class="gia">7.000.000Đ</p>
+        </div>
+
+        <div class="layer4">
+          <a href="order"><img src="Typhlosion600x600.jpg" alt=""> </a> <br>
+          <a class="ten" href="order">Typhlosion</a> <br>
+          <a class="ten" href="order">Mã: 5423 </a>
+          <p class="gia">3.000.000Đ</p>
+        </div>
+
+        <div class="layer5">
+          <a href="order"><img src="Alakazam600x600.jpg" alt=""> </a> <br>
+          <a class="ten" href="order">Alakazam</a> <br>
+          <a class="ten"href="order">Mã: 1267 </a>
+          <p class="gia">2.000.000Đ</p>
+        </div>
+
+        <div class="layer6">
+          <a href="order"><img src="Pain600x600.jpg" alt=""> </a> <br>
+          <a class="ten" href="order">Pain</a> <br>
+          <a class="ten"href="order">Mã: 1267 </a>
+          <p class="gia">9.000.000Đ</p>
+        </div>
+
+      </div>
+    </body>
+</html>
